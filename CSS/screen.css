@@ -1,0 +1,935 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto", serif;
+}
+#container nav { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+#container nav .navleft { 
+    display: flex;
+    align-items: center;
+}
+#container nav .navleft .title { 
+    color: #000;
+}
+#container nav .navright { 
+    display: flex;
+    align-items: center;
+}
+#container nav .navright ul { 
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#container nav .navright ul li:last-child{
+    margin-right: 20px;
+}
+#container nav .navright .user{
+    background-color: aliceblue;
+    padding: 4px 8px;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+#container nav .navright .user img { 
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#container nav .navright .menu{
+    display: none;
+}
+.contain{
+    display: flex;
+    justify-content: space-between;
+}
+#top .navigation { 
+    padding: 30px 50px;
+    background-color: #F8FAFC;
+}
+#top .navigation a { 
+    color: #000;
+}
+#top .navigation img {
+    margin-left: 10px;
+    margin-right: 10px;
+    transform: rotate(-90deg);
+}
+.contain { 
+    padding-top: 50px;
+    padding-left: 50px;
+    background-color: #F8FAFC;
+    position: relative;
+}
+.contain .title { 
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+.contain .para { 
+    width: 45%;
+    color: #334155;
+    margin-bottom: 20px;
+}
+.contain .star { 
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.contain .star .rateing { 
+    color: #FEC84B;
+}
+.contain .star .total { 
+    color: #334155;
+}
+.contain .star .hours { 
+    margin-left: 20px;
+}
+.creator { 
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.creator img { 
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.creator p{
+    color: #334155;
+}
+.creator p span { 
+    color: #2563EB;
+}
+.language { 
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.language a{
+    color: #000;
+}
+.containleft {
+    padding: 20px;
+    margin-right: 40px;
+    border-radius: 5px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 2;
+    right: -10px;
+    top: -60px;
+}
+.containleft .price { 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.containleft .price .offerprice { 
+    font-weight: bold;
+    font-size: 24px;
+}
+.containleft .price .realprice { 
+    color: #94A3B8;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+.containleft .price .discount { 
+    font-size: 24px;
+    font-weight: bold;
+    color: #16A34A;
+}
+#button{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.containleft .buttoncart { 
+    padding: 10px 130px;
+    background-color: #020617;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.containleft .buttonbuy { 
+    padding: 10px 140px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.containleft .share{
+    margin-top: 40px;
+    border-top: 3px solid #E2E8F0;
+}
+.containleft .share h3{
+    margin-top: 20px;
+    font-size: 24px;
+}
+.containleft .share ul { 
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.containleft .share ul li{
+    justify-content: center;
+    align-items: center;
+    background-color: #F8FAFC;
+    padding: 5px 8px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+.containleft .share ul li:hover{
+    transform: scale(1.1);
+}
+.containleft .share ul li a img { 
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#tabs ul{
+    margin-top: 30px;
+    padding: 0px 50px;
+}
+#tabs ul li {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F8FAFC;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    margin-right: 20px;
+}
+#tabs ul li:last-child{
+    margin-right: 0px;
+}
+#tabs ul li a { 
+    color: #000;
+}
+#information { 
+    margin-top: 40px;
+    padding: 0px 50px;
+    width: 70%;
+}
+#information .coursediscription{
+    border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+#information .coursediscription h2 { 
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#information .coursediscription p { 
+    color: #334155;
+    margin-bottom: 20px;
+    width: 90%;
+}
+#information .certification{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+#information .certification h2 { 
+    margin-bottom: 20px;
+}
+#information .certification p { 
+    color: #334155;
+    margin-bottom: 20px;
+    width: 90%;
+}
+#instructor { 
+    margin-top: 40px;
+    padding: 0px 50px;
+    width: 70%;
+}
+#instructor .title { 
+    margin-bottom: 20px;
+}
+#instructor .name a{ 
+    color: #2563EB;
+    margin-bottom: 10px;
+}
+#instructor .desigination a{ 
+    color: #334155;
+}
+#instructor .img { 
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#instructor .img .user { 
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#instructor .img .spec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+#instructor .discription { 
+    color: #334155;
+    margin-bottom: 20px;
+    width: 75%;
+}
+#syllabus { 
+    margin-top: 40px;
+    padding: 0px 50px;
+    width: 70%;
+    margin-bottom: 20px;
+}
+#syllabus .title { 
+    margin-bottom: 20px;
+}
+#syllabus .content { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    width: 70%;
+    border-radius: 5px;
+}
+#syllabus .content .contentleft { 
+    display: flex;
+}
+#syllabus .content .contentright { 
+    display: flex;
+}
+#syllabus .content .contentleft img { 
+    margin-right: 10px;
+}
+#syllabus .content .contentright .one { 
+    margin-right: 10px;
+    color: #334155;
+}
+#syllabus .content .contentleft h1 { 
+    font-size: 20px;
+    color: #000;
+}
+#syllabus .content .contentright .two { 
+    color: #334155;
+}
+#title { 
+    margin-top: 40px;
+    padding: 0px 50px;
+    margin-bottom: 20px;
+}
+#review {
+    margin-top: 40px;
+    padding: 0px 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#review .startop{
+    width: 40%;
+}
+#review .startop .startitle { 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+#review .startop .startitle .reviewrateing { 
+    font-size: 20px;
+    font-weight: bold;
+}
+#review .startop .startitle .totalreviews { 
+    color: #334155;
+    font-size: 14px;
+}
+#review .startop .starcontent { 
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    margin-bottom: 5px;
+}
+#review .startop .starcontent:last-child{
+    margin-bottom: 0px;
+}
+#review .startop .starcontent .persentage{
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.starbottom{
+    display: flex;
+    gap: 100px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    width: 90%;
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 130px;
+}
+.starbottom .reviewprofile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.starbottom .reviewprofile h1{
+    color: #000;
+}
+.starbottom .reviewcomment { 
+    width: 60%;
+}
+.starbottom .reviewcomment .reviewstar { 
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-bottom: 10px;
+    color: #000;
+}
+.starbottom .reviewcomment .reviewstar .reviewrateing { 
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 30px;
+    margin-left: 5px;
+}
+.starbottom .reviewcomment .reviewstar .revidedate { 
+    color: #334155;
+    font-size: 16px;
+}
+.starbottom .reviewcomment .reviewcomentcontent {
+    width: 95%;
+    color: #334155;
+    font-size: 16px;
+}
+.reviewprofilecomment{
+    display: flex;
+    justify-content: space-between;
+}
+.reviewstarbottom .moreview { 
+    padding: 10px 20px;
+    border: 1px solid #000;
+    color: #000;
+    border-radius: 5px;
+}
+.reviewstarbottom .moreview:hover{
+    color: #2563EB;
+    border-color: #2563EB;
+}
+#testimonials { 
+    padding: 10px 50px;
+    background-color: #F8FAFC;
+    margin-bottom: 30px;
+}
+#testimonials .top { 
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#testimonials .top .title { 
+    width: 20%;
+}
+#testimonials .top .controls .prev { 
+    padding: 10px 20px;
+    background-color: #94A3B8;
+    border: none;
+    border-radius: 12px;
+}
+
+#testimonials .top .controls .next { 
+    padding: 10px 20px;
+    background-color: #94A3B8;
+    border: none;
+    border-radius: 12px;
+}
+#testimonials .testimonial-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#testimonials .testimonial-container .testimonial { 
+    width: 30%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+#testimonials .testimonial-container .testimonial p { 
+    width: 90%;
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#testimonials .testimonial-container .testimonial .profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#testimonials .testimonial-container .testimonial .profile img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.profile .profile-info { 
+    margin-left: 10px;
+}
+.profile .profile-info h4 { 
+    color: #000;
+}
+.profile-info small {
+    color: #000;
+}
+.footer {
+    background-color: #1E293B; 
+    color: #ffffff; 
+    padding: 60px 60px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .footer-left .footer-logo{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+  .footer .footer-right{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 40px;
+  }
+  .footer .footer-right h3{
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  .footer-container .footer-about{
+    width: 50%;
+    color: #CBD5E1;
+  }
+  .footer-logo .logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 16px;
+  }
+  .footer-logo .logotitle{
+    color: #fff;
+  }
+  .footer-about {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-top: 10px;
+  }
+  
+  .footer-links {
+    padding: 0;
+    margin-top: 15px;
+  }
+  
+  .footer-links li {
+    margin-bottom: 12px;
+  }
+  
+  .footer-links a {
+    color: #CBD5E1;
+    font-size: 15px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+    color: #50c0e9;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  
+  .footer-social a img {
+    width: 28px; 
+    height: 28px;
+    padding: 10px 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .footer-social a img:hover {
+    transform: scale(1.1); 
+  }
+  .footer .footer-right .three h3{
+    margin-bottom: 15px;
+  }
+  
+  address {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #CBD5E1;
+  }
+  
+  address a {
+    color: #CBD5E1;
+  }
+  
+  address a:hover {
+    text-decoration: underline;
+    color: #50c0e9;
+  }
+  @media (max-width: 992px){
+    .contain .title{
+        font-size: 24px;
+    }
+    .contain .star .hours{
+        width: 20%;
+    }
+    #tabs ul li{
+        margin-right: 10px;
+    }
+    #review .startop{
+        width: 80%;
+    }
+  }
+  @media (max-width: 768px){
+    .contain{
+        flex-direction: column;
+        position: static;
+    }
+    .containleft{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .containleft .containimg{
+        width: 250px;
+        height: 150px;
+    }
+    .containleft .buttoncart{
+        padding: 10px 80px;
+    }
+    .containleft .buttonbuy{
+        padding: 10px 90px;
+    }
+    .contain .star .hours{
+        width: 100%;
+    }
+    #syllabus .content .contentleft h1{
+        font-size: 14px;
+    }
+    #review{
+        flex-direction: column;
+    }
+    #review .startop{
+        margin-bottom: 30px;
+    }
+    #testimonials .top .title{
+        width: 50%;
+    }
+    #testimonials .testimonial-container{
+        flex-direction: column;
+    }
+    #testimonials .testimonial-container .testimonial{
+        width: 100%;
+    }
+  }
+  @media (max-width: 375px) {
+    html, body {
+      overflow-x: hidden; 
+    }
+  
+    #container nav {
+      width: 90%;
+    }
+  
+    #container nav .navright ul {
+      display: none;
+    }
+  
+    #container nav .navright .user {
+      display: none;
+    }
+  
+    #container nav {
+      padding: 10px 10px;
+    }
+  
+    #container nav .navright .menu {
+      display: block;
+    }
+  
+    #container nav .navright .menu img {
+      width: 35px;
+      height: 35px;
+    }
+  
+    #top .navigation {
+      display: none;
+    }
+  
+    .contain {
+      padding-top: 20px;
+      padding-left: 10px;
+    }
+  
+    .contain .title {
+      font-size: 20px;
+    }
+  
+    .contain .para {
+      font-size: 16px;
+      width: 98%;
+    }
+  
+    .contain .star {
+      display: block;
+    }
+  
+    .contain .star .total {
+      margin-top: 10px;
+    }
+  
+    .contain .star .hours {
+      font-size: 14px;
+      margin-top: 10px;
+      margin-left: 0;
+      width: 50%;
+    }
+  
+    .creator {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .language span:nth-of-type(n+2) {
+      display: none;
+    }
+    .containleft{
+        width: 90%;
+        padding: 10px;
+        margin-right: 0px;
+    }
+    .containleft .containimg {
+      width: 90%;
+      height: auto;
+    }
+  
+    .containleft .price {
+      font-size: 10px;
+      margin-top: 10px;
+    }
+  
+    .containleft .buttoncart {
+      padding: 10px 110px;
+    }
+
+    .containleft .buttoncart a{
+        font-size: 16px;
+    }
+    .containleft .buttonbuy {
+      padding: 10px 120px;
+    }
+    .containleft .buttonbuy a{
+        font-size: 16px;
+    }
+    .containleft .price .offerprice {
+      font-size: 24px;
+    }
+  
+    .containleft .price .realprice {
+      font-size: 16px;
+    }
+  
+    .containleft .price .discount {
+      font-size: 24px;
+    }
+  
+    #tabs ul {
+      padding: 0px 10px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, auto);
+      gap: 10px;
+    }
+  
+    #tabs ul li {
+      width: 40%;
+    }
+  
+    #tabs ul li a {
+      font-size: 18px;
+    }
+  
+    #information {
+      padding: 0px 10px;
+      width: 100%;
+    }
+    #instructor {
+      padding: 0px 10px;
+    }
+  
+    #syllabus {
+      padding: 0px 10px;
+    }
+  
+    #title {
+      padding: 0px 10px;
+    }
+  
+    #review {
+      padding: 0px 10px;
+    }
+  
+    #testimonials {
+      padding: 0px 10px;
+    }
+  
+    .footer {
+      padding: 10px 10px;
+    }
+  
+    #information .certification p {
+      font-size: 16px;
+    }
+  
+    #information .coursediscription p {
+      font-size: 16px;
+    }
+  
+    #syllabus .content .contentleft h1 {
+      font-size: 16px;
+    }
+  
+    #syllabus .content .contentright {
+      display: none;
+    }
+  
+    .reviewstarbottom .starbottom:nth-of-type(n+2) {
+      display: none;
+    }
+  
+    .reviewprofilecomment {
+      display: block;
+    }
+  
+    .starbottom {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .starbottom .reviewcomment .reviewstar {
+      display: block;
+    }
+  
+    .starbottom .reviewcomment .reviewstar .revidedate {
+      font-size: 12px;
+    }
+  
+    .starbottom .reviewcomment .reviewcomentcontent {
+      width: 150%;
+      font-size: 16px;
+    }
+  
+    address {
+      font-size: 16px;
+    }
+    .testimonial-container .testimonial:nth-of-type(n+2) {
+      display: none;
+    }
+  
+    #testimonials .testimonial-container {
+      align-items: flex-start;
+    }
+  
+    #testimonials .testimonial-container .testimonial {
+      width: 90%;
+    }
+  
+    #testimonials .top {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    #testimonials .top .title {
+      font-size: 16px;
+      width: 90%;
+    }
+  
+    #testimonials .top .controls .prev {
+      padding: 5px 10px;
+    }
+  
+    #testimonials .top .controls .next {
+      padding: 5px 10px;
+    }
+  
+    #testimonials .testimonial-container .testimonial p {
+      font-size: 16px;
+    }
+
+    .footer-left{
+        margin: 10px 110px 20px;
+    }
+    .footer-logo .logo {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .footer-logo .logotitle {
+      font-size: 24px;
+    }
+    .profile-info small{
+        font-size: 14px;
+    }
+    .containright{
+        margin-top: 20px;
+    }
+    .creator img{
+        width: 80px;
+        height: 80px;
+    }
+    .footer-container .footer-about{
+        display: none;
+    }
+    .footer-container{
+        display: block;
+    }
+    #instructor{
+        width: 90%;
+    }
+    #instructor .discription{
+        width: 100%;
+        font-size: 16px;
+    }
+    #instructor .title{
+        font-size: 24px;
+    }
+    .footer .footer-right{
+        display: block;
+    }
+    .footer .footer-right .two{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+  }

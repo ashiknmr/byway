@@ -1,0 +1,1107 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto", serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+nav div.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav div.right a.image{
+    margin-right: 10px;
+}
+nav div.right a.text{
+    color: #334155;
+}
+nav div.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav div.left .menu{
+    display: none;
+}
+a.login{
+    color: #000;
+    background-color: #fff;
+    padding: 8px 16px;
+    border: 1px solid #000;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+a.login:hover{
+    background-color: #000;
+    color: #fff;
+}
+a.signup{
+    color: #fff;
+    background-color: #334155;
+    padding: 8px 16px;
+    border: 1px solid #334155;
+}
+a.signup:hover{
+    background-color: #2b5999;
+    color: #fff;
+}
+div.top{
+    display: flex;
+    justify-content: space-between;
+}
+div.top div.right{
+    width: 50%;
+    margin-top: 250px;
+    padding: 0px 50px;
+}
+div.right h1{
+    width: 60%;
+    margin-bottom: 10px;
+}
+div.right p{
+    width: 70%;
+    color: #334155;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+div.right a.see-more{
+    background-color: #3B82F6;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+}
+div.right a.see-more:hover{
+    background-color: #2563eb;
+    color: #000;
+}
+div.top div.right h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+}
+div.top div.left {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#model1 {
+    background-color: #60a5fa;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    left: -150px;
+    z-index: 1;
+}
+
+img.model1 {
+    display: block;
+    width: 220px;
+    height: 250px;
+    position: relative;
+    left: -4%;
+    top: -25%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+img.elips1{
+    width: 168px;
+    height: 230px;
+    position: relative;
+    top: -250px;
+    left: 60px;
+    z-index: 1;
+    transform: rotate(30deg);
+}
+img.dot1{
+    position: relative;
+    top: -85px;
+    right: 175px;
+}
+
+#model2 {
+    background-color: #f87171;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 300px;
+    right: 350px;
+    z-index: 2;
+}
+
+img.model2 {
+    display: block;
+    width: 212px;
+    height: 270px;
+    position: relative;
+    top: -35%;
+    left: -5%;
+    border-radius: 50%;
+}
+img.elips2{
+    width: 168px;
+    height: 230px;
+    position: relative;
+    top: -240px;
+    left: 12px;
+    z-index: 1;
+    transform: rotate(100deg);
+}
+img.dot2{
+    position: relative;
+    top: 115px;
+    right: 475px;
+    transform: rotate(280deg);
+}
+
+#model3 {
+    background-color: #fbbf24;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 450px;
+    right: 90px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+img.model3 {
+    display: block;
+    width: 300px;
+    height: 250px;
+    position: relative;
+    top: -6%;
+    right: 10%;
+    border-radius: 50%;
+    transform: scalex(-1);
+    object-fit: contain;
+    clip-path: circle(50%);
+}
+img.rectangele{
+    background-color: #000;
+    padding: 10px 10px;
+    border-radius: 50%;
+    position: relative;
+    top: 150px;
+    right: 250px;
+}
+div.boxone{
+    background-color: #fff;
+    width: 200px;
+    height: 80px;
+    position: absolute;
+    top: 600px;
+    left: 1100px;
+    z-index: 1;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+div.boxone p{
+    font-size: 18px;
+    width: 205px;
+    position: relative;
+    bottom: 50px;
+}
+div.boxone img.two{
+    position: relative;
+    right: 15px;
+}
+div.boxone img.three{
+    position: relative;
+    right: 30px;
+}
+div.boxone img.four{
+    position: relative;
+    right: 50px;
+}
+div.boxone img.five{
+    position: relative;
+    left: 125px;
+    top: -48px;
+}
+.statistics {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f3f3f3;
+    padding: 20px 0;
+    position: relative;
+}
+
+.statistics .stat {
+    text-align: center;
+    flex: 1;
+    position: relative;
+}
+
+.statistics .stat h2 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color: #1A202C;
+}
+
+.statistics .stat p {
+    color: #4A5568;
+}
+.statistics .stat:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 1%;
+    bottom: 10%; 
+    right: 0;
+    width: 3px;
+    background-color: #E2E8F0;
+}
+#top-catagory{
+    padding: 0px 90px;
+}
+#top-catagory div.top{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+#top-catagory div.top a.button{
+    color: #3B82F6;
+    padding: 10px 20px;
+    align-items: center;
+}
+#top-catagory div.top a.button:hover{
+    background-color: #3B82F6;
+    color: #fff;
+    border-radius: 5px;
+}
+#top-catagory div.mid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#top-catagory .mid .category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+#top-catagory .mid .category-card a{
+    color: #000;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#top-catagory .mid .category-card a:hover{
+    color: #3B82F6;
+}
+#top-catagory .mid .category-card .icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #E0F2FE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#top-catagory .mid .category-card .icon img{
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease-in-out;
+}
+#top-catagory .mid .category-card .icon img:hover {
+    transform: rotate(360deg);
+}
+#top-courses { 
+    padding: 0px 90px;
+}
+#top-courses .top {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+#top-courses .top .button {
+    color: #3B82F6;
+    padding: 10px 20px;
+    align-items: center;
+}
+#top-courses .top .button:hover {
+    background-color: #3B82F6;
+    color: #fff;
+    border-radius: 5px;
+}
+#top-courses .mid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#top-courses .mid .coursecard { 
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+#top-courses .mid .coursecard:hover{
+    transform: scale(1.1);
+}
+#top-courses .mid .coursecard h1 { 
+    font-size: 20px;
+    margin-top: 10px;
+    color: #000;
+}
+#top-courses .mid .coursecard p { 
+    color: #334155;
+    margin-top: 5px;
+    margin-bottom: 1px;
+}
+#top-courses .mid .coursecard p.rate{
+    font-size: 24px;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #000;
+}
+#top-courses .mid .coursecard p.rate:hover{
+    color: #FF9F1C;
+}
+#top-courses .mid .coursecard .stars { 
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#top-instructors { 
+    padding: 0px 90px;
+}
+#top-instructors .top { 
+    margin-top: 50px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+#top-instructors .top .button { 
+    color: #3B82F6;
+    padding: 10px 20px;
+    align-items: center;
+}
+#top-instructors .top .button:hover { 
+    background-color: #3B82F6;
+    color: #fff;
+    border-radius: 5px;
+}
+#top-instructors .mid { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#top-instructors .mid .instructor { 
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+#top-instructors .mid .instructor:hover{
+    transform: scale(1.1);
+}
+#top-instructors .mid .instructor a h3 { 
+    font-size: 20px;
+    margin-top: 10px;
+    color: #000;
+}
+#top-instructors .mid .instructor a p{
+    color: #334155;
+    margin-top: 5px;
+    margin-bottom: 1px;
+}
+#top-instructors .mid .instructor .star {
+    border-top: 1px solid #E2E8F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+#top-instructors .mid .instructor .star .left { 
+    display: flex;
+    justify-content: space-between;
+}
+#top-instructors .mid .instructor .star .left p{
+    margin-left: 2px;
+}
+#top-instructors .mid .instructor .star .right p { 
+    font-size: 12px;
+}
+#testimonials { 
+    padding: 30px 90px;
+    background-color: #F8FAFC;
+    margin-bottom: 30px;
+}
+#testimonials .top { 
+    margin-top: 50px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+#testimonials .top .title { 
+    width: 20%;
+}
+#testimonials .top .controls .prev { 
+    padding: 10px 20px;
+    background-color: #94A3B8;
+    border: none;
+    border-radius: 12px;
+}
+
+#testimonials .top .controls .next { 
+    padding: 10px 20px;
+    background-color: #94A3B8;
+    border: none;
+    border-radius: 12px;
+}
+#testimonials .testimonial-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#testimonials .testimonial-container .testimonial { 
+    width: 30%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+#testimonials .testimonial-container .testimonial p { 
+    width: 90%;
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#testimonials .testimonial-container .testimonial .profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#testimonials .testimonial-container .testimonial .profile img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.profile .profile-info { 
+    margin-left: 10px;
+}
+.profile .profile-info h4 { 
+    color: #000;
+}
+.profile-info small {
+    color: #000;
+}
+#join { 
+    padding: 100px 100px;
+    margin-bottom: 30px;
+}
+#join .instructor { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#join .instructor .instruction { 
+    width: 50%;
+}
+#join .instructor .instruction h3 { 
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 20px;
+}
+#join .instructor .instruction p{
+    color: #1D2939;
+    width: 80%;
+    margin-bottom: 30px;
+}
+#join .instructor .instruction .button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    background-color: #020617;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    border-radius: 8px;
+
+}
+#join .instructor .instruction .button img {
+    width: 16px;
+    height: 16px;
+}
+#join .instructor .instruction .button:hover{
+    background-color: #94A3B8;
+    color: #000;
+}
+#join .course { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: scaleX(-1)
+}
+#join .course .instruction { 
+    width: 50%;
+    transform: scaleX(-1);
+}
+#join .course .instruction h3 { 
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 20px;
+}
+#join .course .instruction p { 
+    color: #1D2939;
+    width: 80%;
+    margin-bottom: 30px;
+}
+#join .course .instruction .button { 
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    background-color: #020617;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    border-radius: 8px;
+}
+#join .course .instruction .button img { 
+    width: 16px;
+    height: 16px;
+}
+#join .course .instruction .button:hover{
+    background-color: #94A3B8;
+    color: #000;
+}
+.footer {
+    background-color: #1E293B; 
+    color: #ffffff; 
+    padding: 60px 60px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .footer-left .footer-logo{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+  .footer .footer-right{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 40px;
+  }
+  .footer .footer-right h3{
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  .footer-container .footer-about{
+    width: 50%;
+    color: #CBD5E1;
+  }
+  .footer-logo .logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 16px;
+  }
+  .footer-logo .logotitle{
+    color: #fff;
+  }
+  .footer-about {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-top: 10px;
+  }
+  
+  .footer-links {
+    padding: 0;
+    margin-top: 15px;
+  }
+  
+  .footer-links li {
+    margin-bottom: 12px;
+  }
+  
+  .footer-links a {
+    color: #CBD5E1;
+    font-size: 15px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+    color: #50c0e9;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  
+  .footer-social a img {
+    width: 28px; 
+    height: 28px;
+    padding: 10px 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .footer-social a img:hover {
+    transform: scale(1.1); 
+  }
+  .footer .footer-right .three h3{
+    margin-bottom: 15px;
+  }
+  
+  address {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #CBD5E1;
+  }
+  
+  address a {
+    color: #CBD5E1;
+  }
+  
+  address a:hover {
+    text-decoration: underline;
+    color: #50c0e9;
+  }
+  @media (max-width: 1400px) {
+    .footer{
+        padding: 15px 15px;
+    }
+    div.boxone{
+        display: none;
+    }
+}
+@media (max-width: 1200px) {
+    div.boxone{
+        display: none;
+    }
+    #top-catagory{
+        padding: 0px 20px;
+    }
+    #top-courses{
+        padding: 0px 20px;
+    }
+    #top-instructors{
+        padding: 0px 20px;
+    }
+    #testimonials{
+        padding: 10px 50px;
+    }
+    #top-catagory .mid .category-card{
+        padding: 50px 50px;
+    }
+    .footer .footer-left{
+        width: 50%;
+    }
+    .footer-container .footer-about{
+        width: 80%;
+    }
+    .footer .footer-right{
+        flex-wrap: nowrap;
+    }
+    #top-instructors .mid .instructor:nth-of-type(3),
+    #top-instructors .mid .instructor:nth-of-type(4) {
+    display: none;
+    }
+    #top-courses .mid .coursecard:nth-of-type(4){
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    #top-courses .mid .coursecard:last-child{
+        display: none;
+    }
+    #top-instructors .mid .instructor:nth-of-type(3){
+        display: none;
+    }
+    #join .instructor .instruction{
+        margin-left: 50px;
+    }
+    .footer-container .footer-about{
+        display: none;
+    }
+    .footer .footer-left {
+        width: 35%;
+    }
+}
+@media (max-width: 768px) {
+    div.top div.left{
+        display: none;
+    }
+    div.top div.right{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-image: url(../assets/model-6.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: -1;
+    }
+    #top-catagory div.mid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    #top-courses .mid .coursecard:nth-of-type(3){
+        display: none;
+    }
+    #top-instructors .mid { 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding-left: 60px;
+    }
+    #top-instructors .mid .instructor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 70%;
+    }
+    #top-instructors .mid .instructor img{
+        width: 50%;
+        height: 50%;
+    }
+    #top-instructors .mid .instructor .star {
+        gap: 30px;
+    }
+    #testimonials .top .title{
+        width: 40%;
+    }
+    #testimonials .testimonial-container .testimonia .quote img{
+        width: 20px;
+        height: 20px;
+    }
+    #testimonials .testimonial-container .testimonial p{
+        font-size: 12px;
+    }
+    #testimonials .testimonial-container .testimonial .profile img{
+        width: 30px;
+        height: 30px;
+    }
+    .profile .profile-info{
+        font-size: 15px;
+    }
+    #testimonials .testimonial-container{
+        gap: 20px;
+    }
+    #join .instructor .modelfour{
+        width: 250px;
+        height: 250px;
+    }
+    #join .instructor .instruction h3 {
+        font-size: 20px;
+    }
+    #join .instructor .instruction p{
+        width: 90%;
+        font-size: 14px;
+    }
+    #join .instructor .instruction .button{
+        font-size: 12px;
+    }
+    #join .course .modelsix{
+        width: 250px;
+        height: 250px;
+    }
+    #join .course .instruction h3{
+        font-size: 20px;
+    }
+    #join .course .instruction p{
+        width: 90%;
+        font-size: 14px;
+    }
+    #join .course .instruction .button{
+        font-size: 12px;
+    }
+    .footer-container{
+        flex-direction: column;
+    }
+}
+@media (max-width: 576px) {
+    nav div.left .menu{
+        display: block;
+    }
+    nav div.left .menu img{
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+    }
+    nav div.left .signup,
+    nav div.left .login,
+    nav div.left .cart{
+        display: none;
+    }
+    #top-courses .mid{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .statistics {
+        margin-top: 50px;
+    }
+    .statistics .stat h1{
+        font-size: 18px;
+    }
+    .statistics .stat p{
+        font-size: 12px;
+    }
+    #testimonials .top .title{
+        width: 50%;
+    }
+    #testimonials .testimonial-container .testimonial:nth-of-type(2),
+    #testimonials .testimonial-container .testimonial:nth-of-type(3) {
+        display: none;
+    }
+    #testimonials .testimonial-container .testimonial{
+        width: 100%;
+    }
+    #top-courses .mid{
+        flex-direction: row;
+    }
+    #top-courses .mid .coursecard img.bg{
+        width: 200px;
+        height: 150px;
+    }
+    #top-courses .mid .coursecard h1{
+        font-size: 16px;
+    }
+    #top-courses .mid .coursecard .stars img{
+        width: 10px;
+        height: 10px;
+        margin-top: 5px;
+    }
+    #top-courses .mid .coursecard p{
+        font-size: 10px;
+    }
+    #top-instructors .mid .instructor a h3 {
+        font-size: 16px;
+    }
+    #top-courses .mid .coursecard p.rate{
+        font-size: 18px;
+    }
+    #join {
+        padding: 50px 50px;
+    }
+    #join .instructor .modelfour {
+        width: 200px;
+        height: 200px;
+    }
+    #join .instructor .instruction h3 {
+        font-size: 16px;
+    }
+    #join .instructor .instruction p {
+        width: 100%;
+        font-size: 10px;
+    }
+    #join .instructor .instruction .button {
+        font-size: 9px;
+    }
+    #join .course .modelsix {
+        width: 200px;
+        height: 200px;
+    }
+    #join .course .instruction p {
+        width: 100%;
+        font-size: 10px;
+    }
+    #join .course .instruction .button {
+        font-size: 10px;
+    }
+    .footer .footer-right{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 10px;
+    }
+}
+@media (max-width: 375px){
+    html, body {
+        overflow-x: hidden; 
+      }
+    nav div.left .menu{
+        display: block;
+    }
+    nav div.left .menu img{
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+    }
+    nav div.left .signup,
+    nav div.left .login,
+    nav div.left .cart{
+        display: none;
+    }
+    div.top{
+        display: block;
+    }
+    div.top div.right{
+        width: 100%;
+        margin-top: 50px;
+        padding: 0px 20px;
+        background-image: none;
+    }
+    div.top div.right p{
+        color: #8f8f8f;
+    }
+    div.top div.right h1{
+        font-size: 24px;
+    }
+    .statistics {
+        margin-top: 30px;
+    }
+    .statistics .stat h1 {
+        font-size: 15px;
+    }
+    .statistics .stat p {
+        font-size: 10px;
+    }
+    #top-catagory div.top{
+        display: flex;
+    }
+    #top-catagory div.top a.button{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    #top-catagory div.top h1{
+        width: 60%;
+        font-size: 20px;
+    }
+    #top-catagory div.mid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    #top-courses .top{
+        display: flex;
+    }
+    #top-courses div.top h1{
+        width: 60%;
+        font-size: 20px;
+    }
+    #top-courses div.top a.button{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    #top-courses .mid {
+        flex-direction: column;
+    }
+    #top-instructors .top{
+        display: flex;
+    }
+    #top-instructors .top h1{
+        width: 60%;
+        font-size: 20px;
+    }
+    #top-instructors .top a.button{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    #top-instructors .mid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    #testimonials .top{
+        display: flex;
+    }
+    #testimonials .top .title h2{
+        font-size: 12px;
+    }
+    #testimonials .top .controls .prev{
+        padding: 5px 10px;
+    }
+    #testimonials .top .controls .next{
+        padding: 5px 10px;
+    }
+    #join {
+        padding: 5px 5px;
+    }
+    #join .instructor .modelfour {
+        display: none;
+    }
+    #join .instructor .instruction {
+        margin-left: 30px;
+    }
+    #join .instructor .instruction h3 {
+        font-size: 24px;
+    }
+    #join .instructor .instruction p{
+        font-size: 16px;
+        width: 100%;
+    }
+    #join .instructor .instruction .button {
+        font-size: 14px;
+        padding: 5px 5px;
+    }
+    #join .course .modelsix {
+       display: none;
+    }
+    #join .instructor{
+        display: block;
+        width: 100%;
+    }
+    #join .course{
+        display: block;
+        width: 100%;
+    }
+    #join .course .instruction h3{
+        font-size: 24px;
+    }
+    #join .course .instruction p{
+        font-size: 16px;
+    }
+    #join .course .instruction .button{
+        font-size: 14px;
+        padding: 5px 25px;
+    }
+    .footer-container{
+        display: block;
+    }
+    .footer-left{
+        margin: 10px 110px 20px;
+    }
+    .footer-logo .logo {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .footer-logo .logotitle {
+      font-size: 24px;
+    }
+    .footer .footer-right{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
