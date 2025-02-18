@@ -10,7 +10,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 10px 50px;
-    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+    border-bottom: 1.5px solid #ccc;
 }
 nav div.right{
     display: flex;
@@ -239,8 +239,8 @@ div.boxone img.five{
     margin-top: 200px;
     display: flex;
     justify-content: space-around;
-    background-color: #f3f3f3;
-    padding: 20px 0;
+    background-color: #F8FAFC;
+    padding: 40px 80px;
     position: relative;
 }
 
@@ -298,9 +298,9 @@ div.boxone img.five{
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 100px 100px;
+    padding: 50px 80px;
     border-radius: 10px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 8px 0px #3B82F61F;
 }
 #top-catagory .mid .category-card a{
     color: #000;
@@ -354,7 +354,7 @@ div.boxone img.five{
 #top-courses .mid .coursecard { 
     padding: 10px 10px;
     border-radius: 10px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 8px 0px #3B82F61F;
     transition: transform 0.3s ease-in-out;
 }
 #top-courses .mid .coursecard:hover{
@@ -409,42 +409,51 @@ div.boxone img.five{
     align-items: center;
     margin-bottom: 50px;
 }
+#top-instructors .mid a{
+    color: #000;
+}
 #top-instructors .mid .instructor { 
-    padding: 10px 10px;
+    text-align: center;
+    background: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
+    padding: 20px 10px;
+    box-shadow: 0px 0px 8px 0px #3B82F61F;
+}
+#top-instructors .mid .instructor-img{
+    width: 100%;
+    border-radius: 10px;
 }
 #top-instructors .mid .instructor:hover{
     transform: scale(1.1);
 }
-#top-instructors .mid .instructor a h3 { 
+#top-instructors .mid .instructor-name {
     font-size: 20px;
+    font-weight: bold;
     margin-top: 10px;
-    color: #000;
+    margin-bottom: 10px;
 }
-#top-instructors .mid .instructor a p{
-    color: #334155;
-    margin-top: 5px;
-    margin-bottom: 1px;
+#top-instructors .instructor-role {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
 }
-#top-instructors .mid .instructor .star {
-    border-top: 1px solid #E2E8F0;
+
+#top-instructors .mid .rating {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 0px;
+    margin-top: 10px;
 }
-#top-instructors .mid .instructor .star .left { 
+#top-instructors .mid .rating-left, .rating-right {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
-#top-instructors .mid .instructor .star .left p{
-    margin-left: 2px;
-}
-#top-instructors .mid .instructor .star .right p { 
-    font-size: 12px;
+#top-instructors .mid .star-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
 }
 #testimonials { 
     padding: 30px 90px;
@@ -481,9 +490,9 @@ div.boxone img.five{
 }
 #testimonials .testimonial-container .testimonial { 
     width: 30%;
-    padding: 10px 10px;
+    padding: 20px 12px;
     border-radius: 10px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 8px 0px #3B82F61F;
 }
 #testimonials .testimonial-container .testimonial p { 
     width: 90%;
@@ -698,22 +707,39 @@ div.boxone img.five{
     .footer{
         padding: 15px 15px;
     }
+    .footer-left{
+        width: 50%;
+        margin-left: 30px;
+    }
+    .footer-container .footer-about{
+        width: 70%;
+    }
     div.boxone{
         display: none;
     }
+    .footer .footer-left .footer-logo{
+        width: max-content;
+    }
+    .footer-container{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 @media (max-width: 1200px) {
+    div.top div.right h1{
+        width: 65%;
+    }
     div.boxone{
         display: none;
     }
     #top-catagory{
-        padding: 0px 20px;
+        padding: 0px 30px;
     }
     #top-courses{
-        padding: 0px 20px;
+        padding: 0px 30px;
     }
     #top-instructors{
-        padding: 0px 20px;
+        padding: 0px 30px;
     }
     #testimonials{
         padding: 10px 50px;
@@ -721,29 +747,46 @@ div.boxone img.five{
     #top-catagory .mid .category-card{
         padding: 50px 50px;
     }
+    #top-catagory div.mid{
+        padding: 0px 30px;
+    }
+    #top-instructors .mid{
+        padding: 0px 30px;
+    }
     .footer .footer-left{
-        width: 50%;
+        width: 45%;
     }
     .footer-container .footer-about{
-        width: 80%;
+        width: 95%;
     }
     .footer .footer-right{
         flex-wrap: nowrap;
     }
-    #top-instructors .mid .instructor:nth-of-type(3),
     #top-instructors .mid .instructor:nth-of-type(4) {
     display: none;
     }
-    #top-courses .mid .coursecard:nth-of-type(4){
-        display: none;
+    #top-courses .mid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        gap: 30px;
+        margin-left: 150px;
+    }
+    #top-courses .mid .coursecard{
+        align-items: center;
+        justify-content: center;
+        width: max-content;
+    }
+    .footer {
+        padding: 15px 25px;
     }
 }
 @media (max-width: 992px) {
-    #top-courses .mid .coursecard:last-child{
-        display: none;
+    div.top div.right h1{
+        width: 80%;
     }
-    #top-instructors .mid .instructor:nth-of-type(3){
-        display: none;
+    .statistics{
+        padding: 30px 15px;
     }
     #join .instructor .instruction{
         margin-left: 50px;
@@ -754,36 +797,61 @@ div.boxone img.five{
     .footer .footer-left {
         width: 35%;
     }
+    #top-catagory div.mid{
+        padding: 0px 20px;
+    }
+    .footer-social a img{
+        width: 20px;
+        height: 20px;
+    }
 }
 @media (max-width: 768px) {
     div.top div.left{
         display: none;
     }
     div.top div.right{
+        padding: 0px 30px;
+        margin-top: 90px;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         text-align: center;
-        background-image: url(../assets/model-6.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
+        position: relative;
+        background: none;
+    }
+    div.top div.right::before {
+        content: "";
+        position: absolute;
+        top: 1px;
+        left: 320px;
+        width: 25%;
+        height: 100%;
+        background: url('../assets/logo.svg') center /cover no-repeat;
+        opacity: 0.2;
         z-index: -1;
+    }
+    .statistics {
+        margin-top: 100px;
+        padding: 25px 25px;
+    }
+    #top-catagory .mid .category-card{
+        padding: 25px 25px;
     }
     #top-catagory div.mid{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
-    #top-courses .mid .coursecard:nth-of-type(3){
-        display: none;
-    }
     #top-instructors .mid { 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        gap: 30px;
         padding-left: 60px;
+    }
+    #top-courses .mid{
+        margin-left: 30px;
     }
     #top-instructors .mid .instructor{
         display: flex;
@@ -802,16 +870,23 @@ div.boxone img.five{
     #testimonials .top .title{
         width: 40%;
     }
+    #testimonials .testimonial-container .testimonial:nth-of-type(n+2){
+        display: none;
+    }
+    #testimonials .testimonial-container .testimonial{
+        width: 80%;
+        margin: auto;
+    }
     #testimonials .testimonial-container .testimonia .quote img{
         width: 20px;
         height: 20px;
     }
     #testimonials .testimonial-container .testimonial p{
-        font-size: 12px;
+        font-size: 15px;
     }
     #testimonials .testimonial-container .testimonial .profile img{
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
     }
     .profile .profile-info{
         font-size: 15px;
@@ -849,6 +924,10 @@ div.boxone img.five{
     }
     .footer-container{
         flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .footer .footer-left{
+        width: 28%;
     }
 }
 @media (max-width: 576px) {
@@ -865,18 +944,26 @@ div.boxone img.five{
     nav div.left .cart{
         display: none;
     }
-    #top-courses .mid{
-        flex-direction: column;
-        gap: 20px;
+    div.top div.right::before {
+        top: 1px;
+        left: 220px;
+        width: 35%;
+        height: 100%;
+    }
+    div.top div.right h1 {
+        font-size: 30px;
     }
     .statistics {
-        margin-top: 50px;
+        margin-top: 80px;
+        padding: 15px 15px;
     }
     .statistics .stat h1{
         font-size: 18px;
     }
-    .statistics .stat p{
-        font-size: 12px;
+    .statistics .stat p {
+        font-size: 14px;
+        width: 91%;
+        margin-left: 5px;
     }
     #testimonials .top .title{
         width: 50%;
@@ -889,28 +976,49 @@ div.boxone img.five{
         width: 100%;
     }
     #top-courses .mid{
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin: 20px 100px;
+    }
+    #top-courses .mid .coursecard{
+        text-align: center;
+        padding: 10px 20px;
     }
     #top-courses .mid .coursecard img.bg{
-        width: 200px;
-        height: 150px;
+        width: 100%;
+        height: auto;
     }
     #top-courses .mid .coursecard h1{
-        font-size: 16px;
+        font-size: 20px;
+    }
+    #top-courses .mid .coursecard .stars{
+        display: block;
     }
     #top-courses .mid .coursecard .stars img{
-        width: 10px;
-        height: 10px;
+        width: 20px;
+        height: 20px;
         margin-top: 5px;
-    }
-    #top-courses .mid .coursecard p{
-        font-size: 10px;
     }
     #top-instructors .mid .instructor a h3 {
         font-size: 16px;
     }
     #top-courses .mid .coursecard p.rate{
-        font-size: 18px;
+        font-size: 24px;
+    }
+    #top-instructors .mid .instructor img{
+        width: 100%;
+        height: auto;
+    }
+    #top-instructors .mid{
+        padding-left: 0px;
+        margin-left: 30px;
+    }
+    #top-instructors .mid .instructor{
+        width: 90%;
+    }
+    #top-instructors .mid .rating{
+        gap: 10px;
     }
     #join {
         padding: 50px 50px;
@@ -920,14 +1028,14 @@ div.boxone img.five{
         height: 200px;
     }
     #join .instructor .instruction h3 {
-        font-size: 16px;
+        font-size: 24px;
     }
     #join .instructor .instruction p {
         width: 100%;
-        font-size: 10px;
+        font-size: 14px;
     }
     #join .instructor .instruction .button {
-        font-size: 9px;
+        font-size: 14px;
     }
     #join .course .modelsix {
         width: 200px;
@@ -935,22 +1043,34 @@ div.boxone img.five{
     }
     #join .course .instruction p {
         width: 100%;
-        font-size: 10px;
+        font-size: 14px;
     }
     #join .course .instruction .button {
-        font-size: 10px;
+        font-size: 14px;
+    }
+    .footer{
+        padding: 0px 20px;
     }
     .footer .footer-right{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, auto);
         gap: 10px;
+    }
+    .footer .footer-left{
+        margin-top: 20px;
+    }
+    .footer-container{
+        margin-bottom: 0px;
     }
 }
 @media (max-width: 375px){
     html, body {
         overflow-x: hidden; 
       }
+    nav{
+        padding: 10px 20px;
+    }  
     nav div.left .menu{
         display: block;
     }
@@ -970,23 +1090,43 @@ div.boxone img.five{
     div.top div.right{
         width: 100%;
         margin-top: 50px;
-        padding: 0px 20px;
-        background-image: none;
+        padding: 0px 0px;
+        position: relative;
+        background: none;
+    }
+    div.top div.right::before {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 100px;
+        width: 50%;
+        height: 80%;
+        background: url('../assets/logo.svg') center /cover no-repeat;
+        opacity: 0.2;
+        z-index: -1;
     }
     div.top div.right p{
-        color: #8f8f8f;
+        width: 80%;
     }
     div.top div.right h1{
         font-size: 24px;
+        width: 80%;
     }
     .statistics {
         margin-top: 30px;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #fff;
+    }
+    .statistics .stat{
+        background-color: #E2E8F0;
+        padding: 10px 0px;
     }
     .statistics .stat h1 {
         font-size: 15px;
     }
     .statistics .stat p {
-        font-size: 10px;
+        font-size: 14px;
     }
     #top-catagory div.top{
         display: flex;
@@ -1004,8 +1144,15 @@ div.boxone img.five{
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     }
+    #top-courses{
+        padding: 0px 20px;
+    }
     #top-courses .top{
         display: flex;
+    }
+    #top-courses .mid .coursecard img.bg{
+        width: 80%;
+        height: auto;
     }
     #top-courses div.top h1{
         width: 60%;
@@ -1016,7 +1163,17 @@ div.boxone img.five{
         font-size: 12px;
     }
     #top-courses .mid {
-        flex-direction: column;
+        margin: 0px;
+    }
+    #top-courses .mid .coursecard{
+        padding: 10px 0px;
+    }
+    #top-courses .mid .coursecard h1{
+        width: max-content;
+        margin-left: 15px;
+    }
+    #top-courses .mid .coursecard p{
+        width: 99%;
     }
     #top-instructors .top{
         display: flex;
@@ -1034,11 +1191,20 @@ div.boxone img.five{
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     }
+    #testimonials{
+        padding: 10px 20px;
+    }
     #testimonials .top{
         display: flex;
     }
+    #testimonials .testimonial-container .testimonial{
+        width: 85%;
+    }
+    #testimonials .top .title{
+        width: 75%;
+    }
     #testimonials .top .title h2{
-        font-size: 12px;
+        font-size: 20px;
     }
     #testimonials .top .controls .prev{
         padding: 5px 10px;
@@ -1046,21 +1212,49 @@ div.boxone img.five{
     #testimonials .top .controls .next{
         padding: 5px 10px;
     }
+    #testimonials .profile .profile-info h4{
+        font-size: 18px;
+    }
+    #testimonials .profile-info small{
+        font-size: 16px;
+    }
+    #testimonials .testimonial-container .testimonial p{
+        width: 100%;
+        font-size: 17px;
+    }
+    #testimonials .testimonial-container .testimonial .profile img {
+        width: 30%;
+        height: 20%;
+    }
     #join {
         padding: 5px 5px;
+    }
+    #join div.instructor div.img{
+        display: none;
+    }
+    #join div.course div.img{
+        display: none;
+    }
+    #join div.course{
+        margin-left: -10px;
+    }
+    #join .course .instruction{
+        width: 90%;
+        margin-top: 50px;
     }
     #join .instructor .modelfour {
         display: none;
     }
     #join .instructor .instruction {
-        margin-left: 30px;
+        margin-left: 20px;
+        width: 90%;
     }
     #join .instructor .instruction h3 {
         font-size: 24px;
     }
     #join .instructor .instruction p{
         font-size: 16px;
-        width: 100%;
+        width: 90%;
     }
     #join .instructor .instruction .button {
         font-size: 14px;
@@ -1087,21 +1281,19 @@ div.boxone img.five{
         font-size: 14px;
         padding: 5px 25px;
     }
-    .footer-container{
-        display: block;
-    }
-    .footer-left{
-        margin: 10px 110px 20px;
+    .footer .footer-left{
+        margin-top: 20px;
     }
     .footer-logo .logo {
       width: 30px;
       height: 30px;
     }
-  
     .footer-logo .logotitle {
       font-size: 24px;
+      margin-bottom: 20px;
     }
     .footer .footer-right{
         grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 20px;
     }
 }
